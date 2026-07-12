@@ -36,3 +36,12 @@ Each folder contains an `Instructions.pdf` and a starter `.cpp` file.
 4. Click on the **Coding Rabbit** icon on the left of the screen anytime you need
    help.
 
+## Step 5: Shutting Down (Important!)
+GitHub gives you a limited number of free compute hours per month for Codespaces. If you simply close your browser tab, the Codespace stays running in the background for 30 minutes before timing out, draining your free hours!
+
+When you are done working for the day, **always stop your Codespace**:
+1. Open the VS Code Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows).
+2. Type **`Codespaces: Stop Current Codespace`** and hit Enter.
+3. You can safely close the tab once the session ends.
+
+*(Alternatively, you can manage and stop your active environments at [github.com/codespaces](https://github.com/codespaces))*
