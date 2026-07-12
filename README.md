@@ -47,3 +47,13 @@ When you are done working for the day, **always stop your Codespace**:
 3. You can safely close the tab once the session ends.
 
 *(Alternatively, you can manage and stop your active environments at [github.com/codespaces](https://github.com/codespaces))*
+
+## Step 6: Saving & Submitting Your Work
+While your Codespace saves files automatically, your work is **not** permanently backed up to your GitHub repository until you commit and push it. Codespaces are automatically deleted by GitHub if left inactive for 30 days!
+
+To safely back up your code and submit your assignment, run these three commands in the terminal:
+1. `git add .` *(stages all your changed files)*
+2. `git commit -m "Finished assignment"` *(saves the changes to history)*
+3. `git push` *(uploads the changes to your private repository)*
+
+Your code is now safely submitted and visible in your repository!
