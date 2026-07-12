@@ -10,10 +10,12 @@ To use GitHub Codespaces, you must have a GitHub account. If you do not have one
 2. Make sure you are logged in before proceeding to the next step.
 
 ## Step 2: Launch Your Environment
-1. Click the direct **Codespace URL** provided by your professor.
-2. If prompted, log into your GitHub account.
-3. You will see a page to configure your environment. Click the large green **Create codespace** button in the middle of the screen.
-4. A new browser tab will open with a web-based version of VS Code. Please wait a minute or two for the environment to build. 
+1. Click the green **Use this template** button at the top right of this repository.
+2. Select **Create a new repository** from the dropdown. 
+3. Name your repository (e.g., `mit14-assignment1-YOURNAME`) and select **Private**. 
+4. Click **Create repository**. 
+5. Once your new private repository is created, click the green **Code** button, select the **Codespaces** tab, and click **Create codespace on main**.
+6. A new browser tab will open with a web-based version of VS Code. Please wait a minute or two for the environment to build.
 
 ## Step 3: Sign into Coding Rabbit
 Our custom AI Teaching Assistant, **CodingRabbit**, is pre-installed in your environment to help you learn! 
