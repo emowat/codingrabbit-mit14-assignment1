@@ -24,7 +24,11 @@ Our custom AI Teaching Assistant, **CodingRabbit**, is pre-installed in your env
 3. Switch back to your original **VS Code browser tab** and **Paste** the code into the prompt window at the top center of the screen to finish signing in.
 4. You can now use CodingRabbit for **Homework Assist** (to debug your current code) or **Study Assist** (to explain complex concepts)!
 
-## Step 4: Start Your Assignment
+## Step 4: Review Coding Examples from Lecture 1 & 2
+Inside this repository, you will find two folders: `lecture-01-examples` and `lecture-02-examples`.
+Review the code in these examples to refresh your memory, and be sure to ask CodingRabbit if you have any questions about how they work!
+
+## Step 5: Start Your Assignment
 Inside this repository, you will find 4 problem folders:
 * `problem1/` - Floating Point Bit Manipulation
 * `problem2/` - Matrix Multiplication (Static)
@@ -38,7 +42,7 @@ Each folder contains an `Instructions.pdf` and a starter `.cpp` file.
 4. Click on the **Coding Rabbit** icon on the left of the screen anytime you need
    help.
 
-## Step 5: Shutting Down (Important!)
+## Step 6: Shutting Down (Important!)
 GitHub gives you a limited number of free compute hours per month for Codespaces. If you simply close your browser tab, the Codespace stays running in the background for 30 minutes before timing out, draining your free hours!
 
 When you are done working for the day, **always stop your Codespace**:
@@ -48,7 +52,7 @@ When you are done working for the day, **always stop your Codespace**:
 
 *(Alternatively, you can manage and stop your active environments at [github.com/codespaces](https://github.com/codespaces))*
 
-## Step 6: Saving & Submitting Your Work
+## Step 7: Saving & Submitting Your Work
 While your Codespace saves files automatically, your work is **not** permanently backed up to your GitHub repository until you commit and push it. Codespaces are automatically deleted by GitHub if left inactive for 30 days!
 
 To safely back up your code and submit your assignment, run these three commands in the terminal:
