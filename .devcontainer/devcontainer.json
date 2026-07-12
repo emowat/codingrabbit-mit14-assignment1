@@ -1,0 +1,64 @@
+{
+    "name": "C++ CodingRabbit Development Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+
+                // 1. Disable Copilot across all languages in this container
+                "github.copilot.enable": {
+                    "*": false
+                },
+                "github.copilot.chat.enable": false,
+                "chat.commandCenter.enabled": false,
+                "chat.editor.enable": false,
+                "inlineChat.enable": false,
+
+                // 2. Point CodingRabbit to the student tutor backend.
+                // Codespaces should provide the deployed rag_eng URL via RAG_ENG_URL.
+                // The extension prefers that env var and falls back to this local-dev setting.
+                "codingRabbit.apiUrl": "http://codingrabbit-rag-eng-1327788709.us-east-1.elb.amazonaws.com/api/chat",
+                "codingRabbit.modelName": "codingrabbit-ta",
+
+                // 2. Disable the noisy C++ Doxygen lightbulbs and snippets
+                "C_Cpp.doxygen.generateOnType": false,
+                "C_Cpp.doxygen.generateOnCodeAction": false,
+                "C_Cpp.suggestSnippets": false,
+                "C_Cpp.intelliSenseEngine": "disabled",
+
+                // 3. Disable built-in VS Code quick fixes and snippets globally to enforce CodingRabbit mode
+                "editor.suggest.showSnippets": false,
+                "editor.lightbulb.enabled": "off",
+                "editor.quickSuggestions": {
+                    "other": "off",
+                    "comments": "off",
+                    "strings": "off"
+                }
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "/workspace/.devcontainer/coding-rabbit-0.2.0.vsix"
+            ]
+        }
+    },
+
+    // Keeps the container running in the background cleanly
+    "overrideCommand": true,
+
+    // Run permissions needed if you intend to attach debuggers like GDB locally
+    "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+
+    // Mounts the student's repository directly to /workspace in the Linux container
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+
+    // Ensures the user inside the container is root for easy workspace setup during testing
+    "updateRemoteUserUID": false,
+    "remoteUser": "student"
+}
