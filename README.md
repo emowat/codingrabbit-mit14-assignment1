@@ -46,7 +46,7 @@ Each folder contains an `Instructions.pdf` and a starter `.cpp` file.
 GitHub gives you a limited number of free compute hours per month for Codespaces. If you simply close your browser tab, the Codespace stays running in the background for 30 minutes before timing out, draining your free hours!
 
 When you are done working for the day, **always stop your Codespace**:
-1. Open the VS Code Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows).
+1. Open the VS Code Command Palette by pressing **`F1`** (or click the gear icon in the bottom left -> Command Palette).
 2. Type **`Codespaces: Stop Current Codespace`** and hit Enter.
 3. You can safely close the tab once the session ends.
 
